@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/media/img/Icono-nube-megra.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Black rain</title>
+</head>
+<body>
+    <!-- Utilizo un header de bootstrap intentando aplicar BEM-->
+    <header class="header">
+        <nav class="header__nav navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Black Rain</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                    <img src="/media/Logo.png" alt="Logo" class="header__logo ms-3" height="40" width="40">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Busque y personalice un poco una tarjeta de bootstrap -->
+    <main class="main">
+        <section class="main__intro text-center py-5 bg-light">
+            <h1 class="main__intro-title display-4">Lluvia Negra</h1>
+            <p class="main__intro-subtitle lead">Dicen que la lluvia limpia el alma, pero dentro de poco lloverá alquitrán.</p>
+        </section>
+        <section class="main__content container py-5">
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <img src="media/img/manhunt.jpg" class="card-img-top" alt="manhunt">
+                    <div class="card-body">
+                        <h5 class="card-title">Christian Cantamessa</h5>
+                        <p class="card-text">Escritor, director y diseñador de videojuegos.</p>
+                        <a href="pages/christian-cantamessa.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="media/img/Abrazo.jpg" class="card-img-top" alt="Cuerpos abrazados">
+                    <div class="card-body">
+                        <h5 class="card-title">Zdzisław Beksiński</h5>
+                        <p class="card-text">Pintor, fotógrafo y escultor.</p>
+                        <a href="pages/beksinski.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="media/img/arbol-extraño.jpg" class="card-img-top" alt="Arbol Extraño">
+                    <div class="card-body">
+                        <h5 class="card-title">David Firth</h5>
+                        <p class="card-text">Director, escritor y músico.</p>
+                        <a href="pages/david-firth.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="media/img/indigente.webp" class="card-img-top" alt="Indigente">
+                    <div class="card-body">
+                        <h5 class="card-title">Francisco Goya</h5>
+                        <p class="card-text">Pintor y grabador.</p>
+                        <a href="pages/goya.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="media/img/fila.jpg" class="card-img-top" alt="Personas haciendo una fila">
+                    <div class="card-body">
+                        <h5 class="card-title">H. P. Lovecraft</h5>
+                        <p class="card-text">Escritor.</p>
+                        <a href="/pages/lovecraft.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Un footer estándar -->
+    <footer class="footer bg-dark text-white text-center py-4">
+        <p class="footer__text mb-2">Derechos reservados ;)</p>
+        <section class="footer__comments">
+            <h2 class="footer__comments-title">Dinos qué piensas</h2>
+            <p class="footer__comments-description">Puedes contactarnos a través del siguiente formulario:</p>
+            <form action="#" method="POST" class="footer__comments-form container">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre:</label>
+                    <input type="text" id="name" name="name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje:</label>
+                    <textarea id="message" name="message" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

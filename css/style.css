@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Estilos de mi tarjeta */
+.card {
+    width: 18rem;
+    margin: 15px;
+}
+.card img {
+    height: 200px;
+    width: 100%;          
+    object-fit: cover;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Estilo de mi grid de lovecraft*/
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.grid__main-content {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.grid__main-content  img{
+ width: 40%;
+ height: auto;
+}
+.grid__sidebar {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.grid__text {
+    font-size: 1rem;
+    color: #333;
+}
+.grid__image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
